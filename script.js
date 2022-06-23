@@ -58,10 +58,10 @@ total.addEventListener("click", () => {
     counter1.textContent = golibSana1;
     counter2.textContent = 1 + golibSana2++;
   } else {
-    answer1.textContent = "Teng";
-    answer2.textContent = "Teng";
-    counter1.textContent = 1;
-    counter2.textContent = 1;
+    answer1.textContent = `Win <br> <span style="font-size: 100px">&#128526;</span>`;
+    answer2.textContent = `Win <br> <span style="font-size: 100px">&#128526;</span>`;
+    counter1.textContent = 1 + golibSana1++;
+    counter2.textContent = 1 + golibSana2++;
   }
   imkon.textContent = "Imkoniyat:" + imkonSana;
   if (imkonSana == 0) {
@@ -69,11 +69,14 @@ total.addEventListener("click", () => {
     if (golibSana1 > golibSana2) {
       answer1.innerHTML = `Win <br> <span style="font-size: 100px">&#128526;</span>`;
       answer2.innerHTML = `Lose <br> <span style="font-size: 100px">&#128557;</span>`;
-      alert("Tabriklaymiz siz yutdingiz");
-    } else {
-      alert("Afsus hali bor ekan yutishinga");
+      alert("Tabriklayman Player1 yutdi ");
+    } else if (golibSana1 < golibSana2) {
       answer1.innerHTML = `Lose <br> <span style="font-size: 100px">&#128557;</span>`;
       answer2.innerHTML = `Win <br> <span style="font-size: 100px">&#128526;</span>`;
+      alert("Tabriklayman Player2 yutdi ");
+    } else {
+      answer2.innerHTML = `Win <br> <span style="font-size: 100px">&#128526;</span>`;
+      alert("Durrang");
     }
   }
   console.log(golibSana1);
