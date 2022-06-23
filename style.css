@@ -68,18 +68,6 @@ section .iconca {
   align-items: center;
   justify-content: space-between;
 }
-/* section .back {
-  position: relative;
-  top: 10px;
-  left: 30px;
-  cursor: pointer;
-}
-section .refresh {
-  position: relative;
-  left: 300px;
-  bottom: 50px;
-  cursor: pointer;
-} */
 
 h1 {
   font-size: 32px;
@@ -151,8 +139,12 @@ section .box_right {
 }
 
 @media only screen and (max-width: 600px) {
-  h2,
+  h2 {
+    font-size: 18px;
+    padding-top: 20px;
+  }
   h3 {
+    font-size: 16px;
     padding-top: 20px;
   }
 
